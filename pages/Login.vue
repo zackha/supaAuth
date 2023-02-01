@@ -9,25 +9,19 @@
 <script setup lang="ts">
 const email = ref('')
 const password = ref('')
+const router = useRouter()
+const client = useSupabaseAuthClient()
 
 const login = async () => {
-  const { error }  = await useSupabaseAuthClient().auth.signInWithPassword({
+  const { error }  = await client.auth.signInWithPassword({
     email: email.value,
     password: password.value
   })
   
   if (error) {
     return alert('Something went wrong !')
-  } else {
-    navigateTo('/');
   }
+  router.push('/')
 }
 
-onMounted(() => {
-  watchEffect(() => {
-    if (useSupabaseUser().value) {
-      navigateTo('/')
-    }
-  })
-})
 </script>
