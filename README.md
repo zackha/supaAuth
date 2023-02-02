@@ -1,6 +1,6 @@
 # SupaAuth ⚡️ Nuxt3
 
->To enhance the functionality of your existing Nuxt.js 3 project, integrate a secure Login and Register page utilizing Supabase authentication. This will allow users to easily create an account or log into the system, ensuring a streamlined experience.
+>SupaAuth is a secure login and registration page created using Supabase authentication for your existing Nuxt3 project. This will allow users to easily create an account or log into the system, ensuring a seamless experience.
 
 [⚡️ Live Demo](https://supaauth.netlify.app/)
 
