@@ -10,7 +10,6 @@
     "@nuxt/content": "^2.4.2",
     "@nuxtjs/supabase": "^0.3.0",
     "@nuxtjs/tailwindcss": "^6.3.0",
-    "@tailwindcss/forms": "^0.5.3",
     "nuxt": "^3.1.1"
   }
 }
