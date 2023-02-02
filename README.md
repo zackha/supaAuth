@@ -1,6 +1,6 @@
 # SupaAuth
 
-**git-cliff** can generate [changelog](https://en.wikipedia.org/wiki/Changelog) files from the [Git](https://git-scm.com/) history by utilizing [conventional commits](#conventional_commits) as well as regex-powered [custom parsers](#commit_parsers). The [changelog template](#templating) can be customized with a [configuration file](#configuration-file) to match the desired format.
+>To enhance the functionality of your existing Nuxt.js 3 project, integrate a secure Login and Register page utilizing Supabase authentication. This will allow users to easily create an account or log into the system, ensuring a streamlined experience.
 
 [⚡️ Live Demo](https://supaauth.netlify.app/)
 
