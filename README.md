@@ -4,7 +4,7 @@
 
 [⚡️ Live Demo](https://supaauth.netlify.app/)
 
-#### Login Information
+#### Login information for demo
 1. Email address: **test@test.com**
 2. Password: **Test1234**
 
