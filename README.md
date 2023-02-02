@@ -1,4 +1,4 @@
-[![SupaAuth](https://user-images.githubusercontent.com/904724/194751054-9a267ea6-be9d-420b-9935-c76bf30baaf3.png)](https://supaauth.netlify.app/)
+[![SupaAuth](https://raw.githubusercontent.com/zackha/supaAuth/main/supaAuth.png)](https://supaauth.netlify.app/)
 
 ## SupaAuth
 
