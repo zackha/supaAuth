@@ -4,4 +4,4 @@
 
 [⚡️ Live Demo](https://supaauth.netlify.app/)
 
-![Preview of SupaAuth](https://raw.githubusercontent.com/zackha/supaAuth/main/readme2.png)
+![Preview of SupaAuth](https://raw.githubusercontent.com/zackha/supaAuth/main/assets/supaauth-screenshot.png.png)
