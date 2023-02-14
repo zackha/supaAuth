@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-emptiness text-kuroi-black h-full">
     <form @submit.prevent="login">
       <input type="text" placeholder="Email address" v-model="email" />
       <input type="password" placeholder="Password" v-model="password" />
