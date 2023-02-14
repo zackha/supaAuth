@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@nuxtjs/supabase": "^0.3.0",
+    "@nuxtjs/tailwindcss": "^6.4.0",
     "nuxt": "^3.1.1"
   }
 }
