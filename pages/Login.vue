@@ -18,7 +18,9 @@
                     </div>
                   </label>
                 </div>
-                <button type="submit">Sign in</button>
+                <div class="jGQTZC">
+                  <button type="submit">Sign in</button>
+                </div>
               </form>
             </div>
           </div>
@@ -52,7 +54,7 @@
   @apply grid gap-4 [&:not(:last-child)]:mb-6
 }
 .iJLvzO {
-  @apply text-blue-sari bg-[var(--input-background,#f7f7f7)] block relative rounded-md py-[9px] px-3 text-base cursor-text transition-all duration-200;
+  @apply text-blue-sari bg-[var(--input-background,#f7f7f7)] block relative rounded-[5px] py-[9px] px-3 text-base cursor-text transition-all duration-200;
   box-shadow: inset 0 0 0 var(--input-border,1px) var(--input-border-color,#f1f1f2), 0 0 0 var(--input-outline,0px) var(--input-outline-color,transparent)
 }
 .iJLvzO:hover {
