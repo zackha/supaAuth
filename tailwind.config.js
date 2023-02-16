@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         'emptiness': '#fcfcfc',
-        'kuroi-black': '#12161e'
+        'kuroi-black': '#12161e',
+        'blue-sari': '#656976'
       },
       fontFamily: {
         sans: [
