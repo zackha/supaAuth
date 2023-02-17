@@ -76,13 +76,7 @@
   @apply relative flex items-center
 }
 .cmCuLh {
-  @apply w-full block h-[22px] leading-[22px] m-0 p-0;
-  color: inherit;
-  letter-spacing: -0.125px;
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none
+  @apply w-full block h-[22px] leading-[22px] m-0 p-0 text-inherit tracking-[-0.125px] appearance-none bg-[initial] border-none outline-none
 }
 .gZMQdu {
   box-shadow: 0 0 0 var(--button-outline,0px) var(--button-outline-color,#5c89de4d), inset 0 -1px 1px 0px var(--button-inner-shadow,rgba(38 38 44 / 15%)), inset 0 var(--button-shine-y,1px) 0 0 var(--button-shine,rgba(255 255 255 / 25%)), 0 1px 2px 0 var(--button-shadow,rgba(38 38 44 / 25%));
