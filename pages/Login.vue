@@ -22,6 +22,7 @@
                   <button class="gZMQdu" type="submit">
                     <div class="bjhGPG">Sign in</div>
                   </button>
+                  <a class="fTZPOV" href="#">Forgot your password?</a>
                 </div>
               </form>
             </div>
@@ -93,6 +94,9 @@
 }
 .bjhGPG {
   @apply relative z-10 flex justify-center items-center gap-2 min-h-[1.25rem]
+}
+.fTZPOV {
+  @apply no-underline transition-colors duration-200 text-xs font-medium m-0 leading-normal text-[#b3b5b9] hover:text-[#91949b]
 }
 </style>
 
