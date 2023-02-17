@@ -19,7 +19,9 @@
                   </label>
                 </div>
                 <div class="jGQTZC">
-                  <button type="submit">Sign in</button>
+                  <button class="gZMQdu" type="submit">
+                    <div class="bjhGPG">Sign in</div>
+                  </button>
                 </div>
               </form>
             </div>
@@ -81,6 +83,23 @@
   background: none;
   border: none;
   outline: none
+}
+.gZMQdu {
+  --button-border-radius: 5px;
+  box-shadow: 0 0 0 var(--button-outline,0px) var(--button-outline-color,#5c89de4d), inset 0 -1px 1px 0px var(--button-inner-shadow,rgba(38 38 44 / 15%)), inset 0 var(--button-shine-y,1px) 0 0 var(--button-shine,rgba(255 255 255 / 25%)), 0 1px 2px 0 var(--button-shadow,rgba(38 38 44 / 25%));
+  @apply text-white bg-[#5c89de] table border-none relative font-semibold text-sm m-0 outline-none select-none whitespace-nowrap transition scale-[var(--button-scale,1)]
+  text-center appearance-none rounded-[var(--button-border-radius)] leading-5 py-[10px] px-6 cursor-pointer tracking-[-0.125px] w-full duration-200
+}
+.gZMQdu:hover {
+  --button-shadow: rgba(38 38 44 / 50%);
+  @apply bg-[#3577da]
+}
+.gZMQdu:active {
+  --button-outline: 3px;
+  --button-scale: 0.975
+}
+.bjhGPG {
+  @apply relative z-10 flex justify-center items-center gap-2 min-h-[1.25rem]
 }
 </style>
 
