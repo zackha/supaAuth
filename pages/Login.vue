@@ -5,6 +5,7 @@
         <div class="fNAZQD">
           <div class="dgrFox">
             <div class="DaoRb">
+              <h1 class="eSHwvX">Sign in</h1>
               <form @submit.prevent="login">
                 <div class="jGQTZC">
                   <label class="iJLvzO">
@@ -97,6 +98,9 @@
 }
 .fTZPOV {
   @apply no-underline transition-colors duration-200 text-xs font-medium m-0 leading-normal text-[#b3b5b9] hover:text-[#91949b]
+}
+.eSHwvX {
+  @apply font-[inherit] m-0 leading-[1.4] tracking-[-0.125px] text-[#12161e] font-semibold text-xl
 }
 </style>
 
