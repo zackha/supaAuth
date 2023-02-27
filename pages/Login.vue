@@ -26,6 +26,9 @@
                   <a class="fTZPOV" href="#">Forgot your password?</a>
                 </div>
               </form>
+              <div class="jGQTZC">
+                <p class="dEDhcH">Don’t have a Column account?</p>
+              </div>
             </div>
           </div>
         </div>
@@ -101,6 +104,9 @@
 }
 .eSHwvX {
   @apply font-[inherit] m-0 leading-[1.4] tracking-[-0.125px] text-[#12161e] font-semibold text-xl
+}
+.dEDhcH {
+  @apply m-0 leading-normal text-[#656976] text-sm font-medium
 }
 </style>
 
