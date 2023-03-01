@@ -120,6 +120,9 @@
   before:rounded-[calc(var(--button-border-radius)-1px)]
   before:shadow-[rgba(38,38,44,10%)_0_2px_4px]
 }
+.lcqpaS:hover {
+  --button-background: #e3e3e5;
+}
 </style>
 
 <script setup lang="ts">
