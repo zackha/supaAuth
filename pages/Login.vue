@@ -54,14 +54,13 @@
   @apply bg-emptiness text-kuroi-black h-screen overflow-y-auto relative
 }
 .uXyMu {
-  @apply relative min-h-screen flex justify-center items-center box-border;
-  padding: clamp(92px, 16vh, 200px) 0px
+  @apply relative min-h-screen flex justify-center items-center box-border p-custom-clamp;
 }
 .fNAZQD {
   @apply relative flex-grow
 }
 .dgrFox {
-  @apply max-w-[18.75rem] w-full my-0 mx-auto py-0 px-5 box-border 
+  @apply max-w-xxs w-full my-0 mx-auto py-0 px-5 box-border 
 }
 .DaoRb {
   @apply grid gap-8 text-center
@@ -70,7 +69,7 @@
   @apply grid gap-4 [&:not(:last-child)]:mb-6
 }
 .iJLvzO {
-  @apply text-blue-sari bg-[var(--input-background,#f7f7f7)] block relative rounded-[5px] py-[9px] px-3 text-base cursor-text transition-all duration-200;
+  @apply text-blue-sari bg-[var(--input-background,#f7f7f7)] block relative rounded-sm-two py-2.25 px-3 text-base cursor-text transition-all duration-200;
   box-shadow: inset 0 0 0 var(--input-border,1px) var(--input-border-color,#f1f1f2), 0 0 0 var(--input-outline,0px) var(--input-outline-color,transparent)
 }
 .iJLvzO:hover {
@@ -84,7 +83,7 @@
   --input-outline-color: #5c89de26
 }
 .iJLvzO input {
-  @apply placeholder:transition-all placeholder:duration-200 placeholder:text-[#c2c3c7] hover:placeholder-[#91949b] placeholder:focus-within:text-[#91949b]
+  @apply placeholder:transition-all placeholder:duration-200 placeholder:text-pico-metal hover:placeholder-sleet placeholder:focus-within:text-sleet
 }
 .fdCSlG {
   @apply relative flex items-center
