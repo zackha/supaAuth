@@ -23,14 +23,16 @@
                   <button class="gZMQdu" type="submit">
                     <div class="bjhGPG">Sign in</div>
                   </button>
-                  <a class="fTZPOV" href="#">Forgot your password?</a>
+                  <NuxtLink to="/forget-password" class="fTZPOV">Forgot your password?</NuxtLink>
                 </div>
               </form>
               <div class="jGQTZC">
                 <p class="dEDhcH">Don’t have a SupaAuth account?</p>
-                <button class="lcqpaS">
-                  <div class="bjhGPG">Create new account</div>
-                </button>
+                <NuxtLink to="/register">
+                  <button class="lcqpaS">
+                    <div class="bjhGPG">Create new account</div>
+                  </button>
+                </NuxtLink>
               </div>
             </div>
           </div>
