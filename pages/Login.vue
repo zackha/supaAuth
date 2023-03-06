@@ -2,6 +2,7 @@
   <div class="buJnuC">
     <div class="fvfNpo">
       <div class="uXyMu">
+        <BackToLogin />
         <div class="fNAZQD">
           <div class="dgrFox">
             <NuxtPage />
