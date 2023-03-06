@@ -27,15 +27,15 @@
   @apply relative z-10 flex items-center gap-2 min-h-[20px] transition duration-200
 }
 .jjabJD {
-  @apply text-sleet relative text-sm font-[inherit] tracking-[-0.125px] py-[10px] pr-4 pl-3 font-semibold scale-[var(--button-scale,1)] transition duration-200 opacity-100;
+  @apply text-[var(--button-color,#91949b)] relative text-sm font-[inherit] tracking-[-0.125px] py-[10px] pr-4 pl-3 font-semibold scale-[var(--button-scale,1)] transition duration-200 opacity-100;
   &:hover {
-    @apply text-blue-sari
+    --button-color: #656976
   }
   &:active {
     --button-scale: 0.975
   }
-}
-.jjabJD.router-link-exact-active {
-  @apply opacity-0
+  &.router-link-exact-active {
+    @apply opacity-0
+  }
 }
 </style>
