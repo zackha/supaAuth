@@ -10,32 +10,3 @@
     </NuxtLink>
   </div>
 </template>
-
-<style lang="postcss">
-.gxYQch {
-  @apply z-10 fixed left-0 top-0 right-0 p-6 box-border flex items-center justify-between transition-all duration-200
-}
-.jjabJD svg {
-  --icon-color: currentColor;
-  --icon-size: 20px;
-  @apply flex-[0_0_20px]
-}
-.jXTFjD {
-  @apply w-[var(--icon-size)] h-[var(--icon-size)]
-}
-.fvEvSO {
-  @apply relative z-10 flex items-center gap-2 min-h-[20px] transition duration-200
-}
-.jjabJD {
-  @apply text-[var(--button-color,#91949b)] relative text-sm font-[inherit] tracking-[-0.125px] py-[10px] pr-4 pl-3 font-semibold scale-[var(--button-scale,1)] transition duration-200 opacity-100;
-  &:hover {
-    --button-color: #656976
-  }
-  &:active {
-    --button-scale: 0.975
-  }
-  &.router-link-exact-active {
-    @apply opacity-0
-  }
-}
-</style>
