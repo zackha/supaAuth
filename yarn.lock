@@ -1274,46 +1274,46 @@
   dependencies:
     "@types/node" "*"
 
-"@unhead/dom@1.1.16", "@unhead/dom@^1.1.15":
-  version "1.1.16"
-  resolved "https://registry.yarnpkg.com/@unhead/dom/-/dom-1.1.16.tgz#127b1dc7b96231c20556dc4388c641d0f8f27dca"
-  integrity sha512-4JlwF4pNVynZsxT5687ntvS2yafGtWg7Y76IAPmLSOVrZ6fpYqF/vUn5+eCbMb0Og4C9ECrkbD9NSIqAiQ/0/Q==
+"@unhead/dom@1.1.17", "@unhead/dom@^1.1.15":
+  version "1.1.17"
+  resolved "https://registry.yarnpkg.com/@unhead/dom/-/dom-1.1.17.tgz#4626870edbfb14511b78e250ca27101bdd84ea8b"
+  integrity sha512-7mqgiUllue+T2ZZyGI9bII8WAe9fLhZni3Oz3JkDg2I5wwyD64jUyc8hbgdFcP8Xi97r5f1mAH+KdWOVD825Ww==
   dependencies:
-    "@unhead/schema" "1.1.16"
-    "@unhead/shared" "1.1.16"
+    "@unhead/schema" "1.1.17"
+    "@unhead/shared" "1.1.17"
 
-"@unhead/schema@1.1.16", "@unhead/schema@^1.1.15":
-  version "1.1.16"
-  resolved "https://registry.yarnpkg.com/@unhead/schema/-/schema-1.1.16.tgz#c02d9ce28c63bb7bb7dce68e7fe51126f2ada6ba"
-  integrity sha512-I9xIM9A5q4MBkHM0GTleed47WztJKpA8tJ0HSM74dVl887R3H5qwH9h3RMOo6y9xVhqgFt1MGL6wxTDAjqRczg==
+"@unhead/schema@1.1.17", "@unhead/schema@^1.1.15":
+  version "1.1.17"
+  resolved "https://registry.yarnpkg.com/@unhead/schema/-/schema-1.1.17.tgz#da740515a3bf31a677fbf922f35250587cddd658"
+  integrity sha512-9cs5gPkppwWLQfb3LD/svICmRlaX42NRvpxZxJ+bxtXE3q9i8cFvelBFH9U9xlu+eKjrEiDuPbgSIsfWvpp7Xw==
   dependencies:
     hookable "^5.4.2"
     zhead "^2.0.4"
 
-"@unhead/shared@1.1.16":
-  version "1.1.16"
-  resolved "https://registry.yarnpkg.com/@unhead/shared/-/shared-1.1.16.tgz#6908cfbc948da7d974e9e0b370e81b012ec31ad3"
-  integrity sha512-Fien3han5vZ4sIaH89Tk9o7eensIDEdRynbwnik+WNo0PTfmaN/LCa3EYsacOdNYeZ3eMjjYpmQt6r+FJCqzSA==
+"@unhead/shared@1.1.17":
+  version "1.1.17"
+  resolved "https://registry.yarnpkg.com/@unhead/shared/-/shared-1.1.17.tgz#d9668e6a497a33b631c32c3d358e7b0ed1ce3164"
+  integrity sha512-jwpNeoTP+uEk7eROmHK2YNoFcP67CBBIgIo4TQrK9unx7S9LiX05yXPsCAsgmxTjvCbirxk0v4EcwU1rUkzaxg==
   dependencies:
-    "@unhead/schema" "1.1.16"
+    "@unhead/schema" "1.1.17"
 
 "@unhead/ssr@^1.1.14", "@unhead/ssr@^1.1.15":
-  version "1.1.16"
-  resolved "https://registry.yarnpkg.com/@unhead/ssr/-/ssr-1.1.16.tgz#0e0f91a254d8c56c04a688db1e0a9eb965f82868"
-  integrity sha512-SCay47uCx7jHL30iX/D0chxOLLY5m2/WCU5bepCQlzFO25OFC6cEEYtG6/BQOIRVnyN8a2KvOU38jgL9xQZN9A==
+  version "1.1.17"
+  resolved "https://registry.yarnpkg.com/@unhead/ssr/-/ssr-1.1.17.tgz#1b29b285e301a94448349f74b397a7aa9bc546fc"
+  integrity sha512-IXRwDQPZKpdxDpvscbFzSwC9rye0d72CQoFSjFu5efvly25ReEhn1y6uaak0JOx7ajakH6FtL04SXreNM2U4RA==
   dependencies:
-    "@unhead/schema" "1.1.16"
-    "@unhead/shared" "1.1.16"
+    "@unhead/schema" "1.1.17"
+    "@unhead/shared" "1.1.17"
 
 "@unhead/vue@^1.1.15":
-  version "1.1.16"
-  resolved "https://registry.yarnpkg.com/@unhead/vue/-/vue-1.1.16.tgz#9e49fb86c34d540d9bc01e3cf2a501f7b44697b0"
-  integrity sha512-EbE0kqJHDmebF+X6fL7HqGnbTa+b6h6SzIvE+D0i0/IwhD2lXRrPcBy0XyLV9CLBpAbLVG4OByxnBX+7Kk/vUA==
+  version "1.1.17"
+  resolved "https://registry.yarnpkg.com/@unhead/vue/-/vue-1.1.17.tgz#01ea920f8fe398e8ed10f38f402f79daa5928ad5"
+  integrity sha512-+mCPF9S3lTVe2T9mgLvpbFlWOK24JROkKxm2wD6XiRjg4/eeWXNRCq2aTfE1NclNQqVy45aQzB//OCXuEcxdLg==
   dependencies:
-    "@unhead/schema" "1.1.16"
-    "@unhead/shared" "1.1.16"
+    "@unhead/schema" "1.1.17"
+    "@unhead/shared" "1.1.17"
     hookable "^5.4.2"
-    unhead "1.1.16"
+    unhead "1.1.17"
 
 "@vercel/nft@^0.22.6":
   version "0.22.6"
@@ -5417,14 +5417,14 @@ unenv@^1.2.1:
     node-fetch-native "^1.0.2"
     pathe "^1.1.0"
 
-unhead@1.1.16, unhead@^1.1.14:
-  version "1.1.16"
-  resolved "https://registry.yarnpkg.com/unhead/-/unhead-1.1.16.tgz#b52a9d80aa19152ce8cae4dfff2419a78ea117c8"
-  integrity sha512-m2cPqEkgwHnA/di9P17TRS21p4aAJw4QolwTyXM+gzrlnFPe8gqOYuwEVnLRMS/NgoNWH7iPDOGyf5bbbrnTaw==
+unhead@1.1.17, unhead@^1.1.14:
+  version "1.1.17"
+  resolved "https://registry.yarnpkg.com/unhead/-/unhead-1.1.17.tgz#afa37a09d0e7060391efd2a307dfdf2d3b9f59e0"
+  integrity sha512-TT4qUHgzOcMXgc35u0JrISCWMYA6KryKevCP7tpNEaJ4D0HjmxnzNgAtw3pb9x+BDglo3oawM0AMRK8xvtTgnw==
   dependencies:
-    "@unhead/dom" "1.1.16"
-    "@unhead/schema" "1.1.16"
-    "@unhead/shared" "1.1.16"
+    "@unhead/dom" "1.1.17"
+    "@unhead/schema" "1.1.17"
+    "@unhead/shared" "1.1.17"
     hookable "^5.4.2"
 
 unimport@^2.2.4:
