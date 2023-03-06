@@ -1,6 +1,8 @@
 <template>
   <div>
     <AppHeader />
-    <NuxtPage />
+    <div>
+      INDEX
+    </div>
   </div>
 </template>
