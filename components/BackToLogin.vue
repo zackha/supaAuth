@@ -1,11 +1,13 @@
 <template>
   <div class="gxYQch">
-    <button class="jjabJD" type="submit">
+    <NuxtLink class="jjabJD" to="/login">
       <div class="fvEvSO">
         <svg viewBox="0 0 20 20" fill="none" class="jXTFjD">
           <path d="M11.6667 6.66663L8.33334 9.99996L11.6667 13.3333" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--icon-color)"></path>
-        </svg>Back</div>
-    </button>
+        </svg>
+        Back
+      </div>
+    </NuxtLink>
   </div>
 </template>
 
@@ -25,6 +27,9 @@
   @apply relative z-10 flex items-center gap-2 min-h-[20px] transition duration-200
 }
 .jjabJD {
-  @apply text-sleet relative text-sm font-[inherit] tracking-[-0.125px] py-[10px] pr-4 pl-3 font-semibold
+  @apply text-sleet relative text-sm font-[inherit] tracking-[-0.125px] py-[10px] pr-4 pl-3 font-semibold;
+  &:hover {
+    @apply text-blue-sari
+  }
 }
 </style>
