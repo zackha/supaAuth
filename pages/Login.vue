@@ -72,17 +72,17 @@
 }
 .iJLvzO {
   @apply text-blue-sari bg-[var(--input-background,#f7f7f7)] block relative rounded-sm-two py-2.25 px-3 text-base cursor-text transition-all duration-200;
-  box-shadow: inset 0 0 0 var(--input-border,1px) var(--input-border-color,#f1f1f2), 0 0 0 var(--input-outline,0px) var(--input-outline-color,transparent)
-}
-.iJLvzO:hover {
-  --input-background: #f1f1f2;
-  --input-border-color: #e3e3e5
-}
-.iJLvzO:focus-within {
-  --input-background: #fff;
-  --input-border-color: #5c89de;
-  --input-outline: 2px;
-  --input-outline-color: #5c89de26
+  box-shadow: inset 0 0 0 var(--input-border,1px) var(--input-border-color,#f1f1f2), 0 0 0 var(--input-outline,0px) var(--input-outline-color,transparent);
+  &:hover {
+    --input-background: #f1f1f2;
+    --input-border-color: #e3e3e5
+  }
+  &:focus-within {
+    --input-background: #fff;
+    --input-border-color: #5c89de;
+    --input-outline: 2px;
+    --input-outline-color: #5c89de26
+  }
 }
 .iJLvzO input {
   @apply placeholder:transition-all placeholder:duration-200 placeholder:text-pico-metal hover:placeholder-sleet placeholder:focus-within:text-sleet
@@ -95,15 +95,15 @@
 }
 .gZMQdu {
   box-shadow: 0 0 0 var(--button-outline,0px) var(--button-outline-color,#5c89de4d), inset 0 -1px 1px 0px var(--button-inner-shadow,rgba(38 38 44 / 15%)), inset 0 var(--button-shine-y,1px) 0 0 var(--button-shine,rgba(255 255 255 / 25%)), 0 1px 2px 0 var(--button-shadow,rgba(38 38 44 / 25%));
-  @apply text-white bg-[var(--button-background,#5c89de)] table border-none relative font-semibold text-sm m-0 outline-none select-none whitespace-nowrap text-center appearance-none rounded-[5px] leading-5 tracking-[-0.125px] py-[10px] px-6 cursor-pointer transition scale-[var(--button-scale,1)] w-full duration-200
-}
-.gZMQdu:hover {
-  --button-shadow: rgba(38 38 44 / 50%);
-  --button-background: #3577da;
-}
-.gZMQdu:active {
-  --button-outline: 3px;
-  --button-scale: 0.975
+  @apply text-white bg-[var(--button-background,#5c89de)] table border-none relative font-semibold text-sm m-0 outline-none select-none whitespace-nowrap text-center appearance-none rounded-[5px] leading-5 tracking-[-0.125px] py-[10px] px-6 cursor-pointer transition scale-[var(--button-scale,1)] w-full duration-200;
+  &:hover {
+    --button-shadow: rgba(38 38 44 / 50%);
+    --button-background: #3577da
+  }
+  &:active {
+    --button-outline: 3px;
+    --button-scale: 0.975
+  }
 }
 .bjhGPG {
   @apply relative z-10 flex justify-center items-center gap-2 min-h-[1.25rem]
@@ -119,18 +119,16 @@
 }
 .lcqpaS {
   --button-border-radius: 5px;
-  @apply text-[#656976] bg-[var(--button-background,#eeefef)] table border-none relative font-semibold text-sm m-0 outline-none select-none whitespace-nowrap text-center appearance-none rounded-[var(--button-border-radius)] leading-5 tracking-[-0.125px] py-[10px] px-6 cursor-pointer transition scale-[var(--button-scale,1)] w-full duration-300
-  before:bg-white
-  before:absolute
-  before:inset-[1.34px]
-  before:rounded-[calc(var(--button-border-radius)-1px)]
-  before:shadow-[rgba(38,38,44,10%)_0_2px_4px]
-}
-.lcqpaS:hover {
-  --button-background: #e3e3e5;
-}
-.lcqpaS:active {
+  @apply text-[#656976] bg-[var(--button-background,#eeefef)] table border-none relative font-semibold text-sm m-0 outline-none select-none whitespace-nowrap text-center appearance-none rounded-[var(--button-border-radius)] leading-5 tracking-[-0.125px] py-[10px] px-6 cursor-pointer transition scale-[var(--button-scale,1)] w-full duration-300;
+  &:before {
+    @apply bg-white absolute inset-[1.34px] rounded-[calc(var(--button-border-radius)-1px)] shadow-[rgba(38,38,44,10%)_0_2px_4px] content-['']
+  }
+  &:hover {
+    --button-background: #e3e3e5
+  }
+  &:active {
   --button-scale: 0.975
+  }
 }
 .cyDNyc {
   @apply transition duration-200 m-0 absolute z-10 left-2/4 text-center translate-x-[-50%] bottom-6 text-[10px] max-w-[260px] text-[#c2c3c7]
