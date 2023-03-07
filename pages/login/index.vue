@@ -18,7 +18,7 @@
         <button class="gZMQdu" type="submit">
           <div class="bjhGPG">Sign in</div>
         </button>
-        <NuxtLink to="login/forget-password" class="fTZPOV">Forgot your password?</NuxtLink>
+        <NuxtLink to="login/forget-password" class="fTZPOV">Forget your password?</NuxtLink>
       </div>
     </form>
     <div class="jGQTZC">
