@@ -36,6 +36,7 @@
 const email = ref('')
 const password = ref('')
 const client = useSupabaseAuthClient()
+const user = useSupabaseUser()
 
 const login = async () => {
   const { error }  = await client.auth.signInWithPassword({
@@ -46,4 +47,10 @@ const login = async () => {
     return alert('Something went wrong !')
   }
 }
+
+watchEffect(() => {
+  if (user.value) {
+    navigateTo('/')
+  }
+})
 </script>
