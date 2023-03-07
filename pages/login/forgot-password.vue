@@ -23,7 +23,7 @@ const user = useSupabaseUser()
 
 const resetpassword = async () => {
   const { error }  = await client.auth.resetPasswordForEmail(email.value, {
-    redirectTo: 'http://localhost:3000/login/new-password',
+    redirectTo: 'http://localhost:3000/login/new_password',
   })
   if (error) {
     return alert('Something went wrong !')
