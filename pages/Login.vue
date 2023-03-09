@@ -62,5 +62,6 @@ const login = async () => {
   if (error) {
     return alert('Something went wrong !')
   }
+  navigateTo('/')
 }
 </script>
