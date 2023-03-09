@@ -2,7 +2,7 @@
   <div class="buJnuC">
     <div class="fvfNpo">
       <div class="uXyMu">
-        <BackToLogin />
+        <BackToLogin class="jfDXjo" />
         <div class="fNAZQD">
           <div class="dgrFox">
             <div class="DaoRb">
@@ -24,12 +24,12 @@
                   <button class="gZMQdu" type="submit">
                     <div class="bjhGPG">Sign in</div>
                   </button>
-                  <NuxtLink to="forgot-password" class="fTZPOV">Forgot your password?</NuxtLink>
+                  <NuxtLink to="/forgot-password" class="fTZPOV">Forgot your password?</NuxtLink>
                 </div>
               </form>
               <div class="jGQTZC">
                 <p class="dEDhcH">Don’t have a SupaAuth account?</p>
-                <NuxtLink to="register">
+                <NuxtLink to="/register">
                   <button class="lcqpaS">
                     <div class="bjhGPG">Create new account</div>
                   </button>

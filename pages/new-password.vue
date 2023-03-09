@@ -2,7 +2,7 @@
   <div class="buJnuC">
     <div class="fvfNpo">
       <div class="uXyMu">
-        <BackToLogin />
+        <BackToLogin class="jfDXjo" />
         <div class="fNAZQD">
           <div class="dgrFox">
             <div class="DaoRb">
@@ -24,7 +24,7 @@
                   <button class="gZMQdu" type="submit">
                     <div class="bjhGPG">Save</div>
                   </button>
-                  <NuxtLink to="login" class="fTZPOV">Back to sign in</NuxtLink>
+                  <NuxtLink to="/login" class="fTZPOV">Back to sign in</NuxtLink>
                 </div>
               </form>
             </div>
