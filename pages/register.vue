@@ -39,6 +39,16 @@
                   <button class="gZMQdu" type="submit">
                     <div class="bjhGPG">Sign up</div>
                   </button>
+                  <div class="xxEKN">
+                    By signing up you agree to our
+                    <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" class="bkFclS">
+                      <span>API Terms of Service</span>
+                    </a>
+                    and
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="bkFclS">
+                      <span>Privacy Policy</span>
+                    </a>.
+                  </div>
                 </div>
               </form>
             </div>

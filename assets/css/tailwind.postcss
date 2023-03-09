@@ -118,3 +118,43 @@ body {
     --button-scale: 0.975
   }
 }
+.xxEKN {
+  @apply text-left text-xs font-medium text-sleet
+}
+.bkFclS {
+  @apply font-medium bg-none border-none inline 
+  cursor-pointer p-0 m-0 relative leading-5 
+  no-underline text-current;
+  --line-background-size: 100%;
+  --line-background-delay: 0.15s;
+  --line-stroke-dashoffset: 46;
+  --line-stroke-duration: 0.15s;
+  --line-stroke-easing: linear;
+  --line-stroke-delay: 0s;
+  font-style: inherit;
+  font-variant: inherit;
+  font-stretch: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-optical-sizing: inherit;
+  font-kerning: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  &:hover {
+    --line-background-size: 0%;
+    --line-background-delay: 0s;
+    --line-stroke-dashoffset: 26;
+    --line-stroke-duration: 0.3s;
+    --line-stroke-easing: cubic-bezier(0.3,1.5,0.5,1);
+    --line-stroke-delay: 0.195s;
+  }
+  & span {
+    background-image: linear-gradient(0deg, currentcolor 0%, currentcolor 100%);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: var(--line-background-size) 1px;
+    transition: background-size 0.2s linear var(--line-background-delay);
+    transform: translateZ(0px);
+    line-height: 20px;
+  }
+}
