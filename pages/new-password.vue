@@ -17,7 +17,6 @@
       <button class="gZMQdu" type="submit">
         <div class="bjhGPG">Save</div>
       </button>
-      <NuxtLink to="login" class="fTZPOV">Back to sign in</NuxtLink>
     </div>
   </form>
 </template>
