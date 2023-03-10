@@ -1,71 +1,55 @@
 <template>
-  <div class="buJnuC">
-    <div class="fvfNpo">
-      <div class="uXyMu">
-        <BackToLogin />
-        <div class="fNAZQD">
-          <div class="dgrFox">
-            <div class="DaoRb">
-              <h1 class="eSHwvX">Create an account</h1>
-              <form @submit.prevent="signUp">
-                <div class="jGQTZC">
-                  <label class="iJLvzO">
-                    <div class="fdCSlG">
-                      <input class="cmCuLh" type="text" placeholder="First name" v-model="name" />
-                    </div>
-                  </label>
-                  <label class="iJLvzO">
-                    <div class="fdCSlG">
-                      <input class="cmCuLh" type="text" placeholder="Last name" v-model="lastname" />
-                    </div>
-                  </label>
-                  <label class="iJLvzO">
-                    <div class="fdCSlG">
-                      <input class="cmCuLh" type="text" placeholder="Company (Optional)" v-model="company" />
-                    </div>
-                  </label>
-                  <label class="iJLvzO">
-                    <div class="fdCSlG">
-                      <input class="cmCuLh" type="text" placeholder="Email address" v-model="email" />
-                    </div>
-                  </label>
-                  <label class="iJLvzO">
-                    <div class="fdCSlG">
-                      <input class="cmCuLh" type="password" placeholder="Password" v-model="password" />
-                    </div>
-                  </label>
-                </div>
-                <div class="jGQTZC">
-                  <button class="gZMQdu" type="submit">
-                    <div class="bjhGPG">Sign up</div>
-                  </button>
-                  <div class="xxEKN">
-                    By signing up you agree to our
-                    <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" class="bkFclS">
-                      <span>API Terms of Service</span>
-                    </a>
-                    and
-                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="bkFclS">
-                      <span>Privacy Policy</span>
-                    </a>.
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+  <h1 class="eSHwvX">Create an account</h1>
+  <form @submit.prevent="signUp">
+    <div class="jGQTZC">
+      <label class="iJLvzO">
+        <div class="fdCSlG">
+          <input class="cmCuLh" type="text" placeholder="First name" v-model="name" />
         </div>
-        <p class="cyDNyc">
-          This site is authenticate by supabase.com and the Supabase
-          <a target="_blank" href="https://supabase.com/privacy" rel="noreferrer"> Privacy Policy </a>
-          and <a target="_blank" href="https://supabase.com/terms" rel="noreferrer"> Terms of Service </a>
-          apply.
-        </p>
+      </label>
+      <label class="iJLvzO">
+        <div class="fdCSlG">
+          <input class="cmCuLh" type="text" placeholder="Last name" v-model="lastname" />
+        </div>
+      </label>
+      <label class="iJLvzO">
+        <div class="fdCSlG">
+          <input class="cmCuLh" type="text" placeholder="Company (Optional)" v-model="company" />
+        </div>
+      </label>
+      <label class="iJLvzO">
+        <div class="fdCSlG">
+          <input class="cmCuLh" type="text" placeholder="Email address" v-model="email" />
+        </div>
+      </label>
+      <label class="iJLvzO">
+        <div class="fdCSlG">
+          <input class="cmCuLh" type="password" placeholder="Password" v-model="password" />
+        </div>
+      </label>
+    </div>
+    <div class="jGQTZC">
+      <button class="gZMQdu" type="submit">
+        <div class="bjhGPG">Sign up</div>
+      </button>
+      <div class="xxEKN">
+        By signing up you agree to our
+        <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" class="bkFclS">
+          <span>API Terms of Service</span>
+        </a>
+        and
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="bkFclS">
+          <span>Privacy Policy</span>
+        </a>.
       </div>
     </div>
-  </div>
+  </form>
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  layout: "auth"
+});
 const email = ref('')
 const password = ref('')
 const name = ref('')
