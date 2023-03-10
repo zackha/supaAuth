@@ -2,6 +2,7 @@
   <div class="buJnuC">
     <div class="fvfNpo">
       <div class="uXyMu">
+        <AppBackToLogin />
         <div class="fNAZQD">
           <div class="dgrFox">
             <div class="DaoRb">
