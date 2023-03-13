@@ -15,7 +15,7 @@
             Authentication template with email and password, using Supabase. If you want to a quick start to your next Nuxt3 + Supabase app, please feel free to use this template.
           </p>
           <div class="uQxNj">
-            <a class="bQRHNT" href="#">
+            <NuxtLink class="bQRHNT" to="/login">
               <span class="fKlELC">
                 Login 
                 <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="taKtSf">
@@ -23,7 +23,7 @@
                   <path class="stem" d="M12 8L2 8" stroke-width="1.5"></path>
                 </svg>
               </span>
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>
