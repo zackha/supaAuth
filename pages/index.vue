@@ -71,8 +71,6 @@
     transition: opacity 0.5s ease 0s;
   }
   &:hover {
-    --btn-border: rgba(17,26,74,1);
-    --btn-bg: rgba(17,26,74,1);
     @apply cursor-pointer;
     .chevron, .stem {
       transform: translateX(0px);
@@ -82,6 +80,15 @@
     }
     &::after {
       opacity: 0.15;
+    }
+  }
+  &:active {
+    box-shadow: 0 0 0 1px var(--btn-border),0 1px 3px rgba(0,0,0,0.15),0 0 0 0 rgba(212,227,247,1);
+    .chevron, .stem {
+      transform: translateX(2px);
+    }
+    &::after {
+      opacity: 0.05;
     }
   }
 }
