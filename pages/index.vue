@@ -1,8 +1,8 @@
 <template>
   <main>
-    <section>
-      <div>
-        <div>
+    <section class="pt-20 pb-40 min-h-screen flex flex-col justify-center">
+      <div class="px-6 w-full mx-auto max-w-6xl">
+        <div class="relative z-10 max-w-screen-sm">
           <p class="fVeafc">
             unauthenticated
           </p>
@@ -12,7 +12,7 @@
             Starter Template
           </h1>
           <p class="kRTmDC">
-            Authentication template with email and password, using Supabase. If you want to a quick start to your next Nuxt3 + Supabase app, please feel free to use this template.
+            Authentication template with email and password, using Supabase. If you want to a quick start to your next Nuxt3 app, please feel free to use this template.
           </p>
           <div class="uQxNj">
             <NuxtLink class="bQRHNT" to="/login">
@@ -61,12 +61,10 @@
   @apply flex gap-3 mt-4;
 }
 .bQRHNT {
-  --btn-border: rgba(17,26,74,1);
-  --btn-bg: rgba(17,26,74,1);
   @apply relative text-white rounded-lg px-4 h-9 m-px font-medium outline-none whitespace-nowrap 
   cursor-pointer text-center leading-4 items-center justify-center inline-flex;
-  background-color: var(--btn-bg);
-  box-shadow: 0 0 0 1px var(--btn-border),0 2px 4px rgba(0,0,0,0.25),0 1px 2px rgba(0,0,0,0.25);
+  background-color: rgba(17,26,74,1);
+  box-shadow: 0 0 0 1px rgba(17,26,74,1),0 2px 4px rgba(0,0,0,0.25),0 1px 2px rgba(0,0,0,0.25);
   transition: box-shadow 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
   min-height: 36px;
   &::after {
@@ -88,7 +86,7 @@
     }
   }
   &:active {
-    box-shadow: 0 0 0 1px var(--btn-border),0 1px 3px rgba(0,0,0,0.15),0 0 0 0 rgba(212,227,247,1);
+    box-shadow: 0 0 0 1px rgba(17,26,74,1),0 1px 3px rgba(0,0,0,0.15),0 0 0 0 rgba(212,227,247,1);
     .chevron, .stem {
       transform: translateX(2px);
     }
