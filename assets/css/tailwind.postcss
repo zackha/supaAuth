@@ -9,19 +9,20 @@ body {
   @apply text-base m-0 leading-[1.6]
 }
 .buJnuC {
-  @apply bg-emptiness text-kuroi-black h-full
+  @apply bg-fcfcfc text-12161e h-full
 }
 .fvfNpo {
-  @apply bg-emptiness text-kuroi-black h-screen overflow-y-auto relative
+  @apply bg-fcfcfc text-12161e h-screen overflow-y-auto relative
 }
 .uXyMu {
-  @apply relative min-h-screen flex justify-center items-center box-border p-custom-clamp
+  @apply relative min-h-screen flex justify-center items-center box-border;
+  padding: clamp(92px, 16vh, 200px) 0px
 }
 .fNAZQD {
   @apply relative flex-grow
 }
 .dgrFox {
-  @apply max-w-xxs w-full my-0 mx-auto py-0 px-5 box-border 
+  @apply max-w-75 w-full my-0 mx-auto py-0 px-5 box-border
 }
 .DaoRb {
   @apply grid gap-8 text-center
@@ -30,8 +31,9 @@ body {
   @apply grid gap-4 [&:not(:last-child)]:mb-6
 }
 .iJLvzO {
-  @apply text-blue-sari bg-[var(--input-background,#f7f7f7)] block relative rounded-sm-two py-2.25 px-3 text-base cursor-text transition-all duration-200;
+  @apply text-656976 bg-[var(--input-background,#f7f7f7)] block relative py-2.25 px-3 text-base cursor-text transition-all duration-200;
   box-shadow: inset 0 0 0 var(--input-border,1px) var(--input-border-color,#f1f1f2), 0 0 0 var(--input-outline,0px) var(--input-outline-color,transparent);
+  border-radius: 5px;
   &:hover {
     --input-background: #f1f1f2;
     --input-border-color: #e3e3e5
@@ -44,7 +46,7 @@ body {
   }
 }
 .iJLvzO input {
-  @apply placeholder:transition-all placeholder:duration-200 placeholder:text-pico-metal hover:placeholder-sleet placeholder:focus-within:text-sleet
+  @apply placeholder:transition-all placeholder:duration-200 placeholder:text-c2c3c7 hover:placeholder-91949b placeholder:focus-within:text-91949b
 }
 .fdCSlG {
   @apply relative flex items-center
@@ -80,7 +82,8 @@ body {
   --button-border-radius: 5px;
   @apply text-[#656976] bg-[var(--button-background,#eeefef)] table border-none relative font-semibold text-sm m-0 outline-none select-none whitespace-nowrap text-center appearance-none rounded-[var(--button-border-radius)] leading-5 tracking-[-0.125px] py-[10px] px-6 cursor-pointer transition scale-[var(--button-scale,1)] w-full duration-300;
   &:before {
-    @apply bg-white absolute inset-[1.34px] rounded-[calc(var(--button-border-radius)-1px)] shadow-[rgba(38,38,44,10%)_0_2px_4px] content-['']
+    @apply bg-white absolute inset-[1.34px] rounded-[calc(var(--button-border-radius)-1px)] shadow-[rgba(38,38,44,10%)_0_2px_4px];
+    content: '';
   }
   &:hover {
     --button-background: #e3e3e5
@@ -122,7 +125,7 @@ body {
   }
 }
 .xxEKN {
-  @apply text-left text-xs font-medium text-sleet
+  @apply text-left text-xs font-medium text-91949b
 }
 .bkFclS {
   @apply font-medium bg-none border-none inline 

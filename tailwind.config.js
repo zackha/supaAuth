@@ -4,21 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        'emptiness': '#fcfcfc',
-        'kuroi-black': '#12161e',
-        'blue-sari': '#656976',
-        'pico-metal': '#c2c3c7',
-        'sleet': '#91949b'
+        'fcfcfc': '#fcfcfc',
+        '12161e': '#12161e',
+        '656976': '#656976',
+        'c2c3c7': '#c2c3c7',
+        '91949b': '#91949b',
+        '232730': '#232730',
+        '575a64': '#575a64',
       },
       padding: {
-        'custom-clamp': 'clamp(92px, 16vh, 200px) 0px',
-        '2.25': '9px'
+        '2.25': '0.563rem',
       },
       maxWidth: {
-        'xxs': '18.75rem'
-      },
-      borderRadius: {
-        'sm-two': '5px'
+        '75': '18.75rem',
       },
       fontFamily: {
         sans: [

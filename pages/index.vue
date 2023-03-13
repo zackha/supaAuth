@@ -1,12 +1,104 @@
 <template>
-  <div v-if="user">
-    <p class="text-xl">Email: {{ user.email }}</p>
-    <p class="text-xl">First Name: {{ user.user_metadata.first_name }}</p>
-    <p class="text-xl">Last Name: {{ user.user_metadata.last_name }}</p>
-    <p class="text-xl">Company: {{ user.user_metadata.company }}</p>
-  </div>
+  <main>
+    <section>
+      <div>
+        <div>
+          <p class="fVeafc">
+            unauthenticated
+          </p>
+          <h1 class="kKxhrq">
+            Nuxt3 + Supabase
+            <br>
+            Starter Template
+          </h1>
+          <p class="kRTmDC">
+            Authentication template with email and password, using Supabase. If you want to a quick start to your next Nuxt3 + Supabase app, please feel free to use this template.
+          </p>
+          <div class="uQxNj">
+            <a class="bQRHNT" href="#">
+              <span class="fKlELC">
+                Login 
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="taKtSf">
+                  <path class="chevron" d="M8 13L13 8L8 3" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                  <path class="stem" d="M12 8L2 8" stroke-width="1.5"></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </template>
 
-<script setup lang="ts">
-const user = useSupabaseUser()
-</script>
+<style lang="postcss">
+.fVeafc {
+  @apply text-base leading-5 font-semibold mb-3 text-232730;
+  letter-spacing: -.01em;
+  &:before {
+    @apply w-2 h-4 mr-2 inline-block relative top-0.5;
+    border-radius: 1px;
+    background: linear-gradient(165deg,#cd4545 0%,#e97e7e 92%);
+    content: '';
+  }
+}
+.kKxhrq {
+  @apply text-7xl text-12161e font-semibold mt-8;
+  line-height: 4.5rem;
+  letter-spacing: -.03em;
+}
+.kRTmDC {
+  @apply text-2xl leading-8 text-575a64 mt-2;
+  letter-spacing: -.01em;
+  font-weight: inherit;
+}
+.uQxNj {
+  @apply flex gap-3 mt-4;
+}
+.bQRHNT {
+  --btn-border: rgba(17,26,74,1);
+  --btn-bg: rgba(17,26,74,1);
+  @apply relative text-white rounded-lg px-4 h-9 m-px font-medium outline-none whitespace-nowrap 
+  cursor-pointer text-center leading-4 items-center justify-center inline-flex;
+  background-color: var(--btn-bg);
+  box-shadow: 0 0 0 1px var(--btn-border),0 2px 4px rgba(0,0,0,0.25),0 1px 2px rgba(0,0,0,0.25);
+  transition: box-shadow 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+  min-height: 36px;
+  &::after {
+    @apply inset-0 absolute opacity-10 rounded-lg block;
+    content: '';
+    background-image: linear-gradient(180deg,rgba(255,255,255,1),rgba(255,255,255,0) 100%);
+    transition: opacity 0.5s ease 0s;
+  }
+  &:hover {
+    --btn-border: rgba(17,26,74,1);
+    --btn-bg: rgba(17,26,74,1);
+    @apply cursor-pointer;
+    .chevron, .stem {
+      transform: translateX(0px);
+    }
+    .stem {
+      stroke-dashoffset: 0;
+    }
+    &::after {
+      opacity: 0.15;
+    }
+  }
+}
+.fKlELC {
+  @apply text-sm gap-1 items-center flex z-10 relative;
+}
+.taKtSf {
+  @apply h-4 stroke-current inline-block -mr-1;
+  .chevron {
+    transform: translateX(-3px);
+    transition: transform 0.15s ease 0s;
+  }
+  .stem {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    transform: translateX(-3px);
+    transition: stroke-dashoffset 0.15s ease 0s, transform 0.15s ease 0s;
+  }
+}
+</style>
