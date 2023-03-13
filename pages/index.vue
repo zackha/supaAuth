@@ -24,6 +24,11 @@
                 </svg>
               </span>
             </NuxtLink>
+            <button class="ieMfVH">
+              <span class="fKlELC">
+                Sign up
+              </span>
+            </button>
           </div>
         </div>
       </div>
@@ -106,6 +111,18 @@
     stroke-dashoffset: 10;
     transform: translateX(-3px);
     transition: stroke-dashoffset 0.15s ease 0s, transform 0.15s ease 0s;
+  }
+}
+.ieMfVH {
+  @apply relative text-232730 rounded-lg px-4 h-9 m-px font-medium outline-none whitespace-nowrap 
+  cursor-pointer text-center leading-4 items-center justify-center inline-flex;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 1px rgba(255,255,255,0),0 0 0 1px rgba(87,90,100,0.12);
+  transition: box-shadow 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+  &:hover {
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),0 0 0 1px rgba(87,90,100,0.2);
   }
 }
 </style>
