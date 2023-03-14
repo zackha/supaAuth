@@ -1,46 +1,39 @@
 <template>
-  <main>
-    <section class="pt-20 pb-28 min-h-screen flex flex-col justify-center">
-      <div class="px-6 w-full mx-auto max-w-6xl">
-        <div class="relative z-10 max-w-screen-sm">
-          <p class="fVeafc">unauthenticated
-          </p>
-          <h1 class="kKxhrq">
-            Nuxt3 + Supabase
-            <br>
-            Starter Template
-          </h1>
-          <p class="kRTmDC">
-            Authentication template with email and password, using Supabase. If you want to a quick start to your next Nuxt3 app, please feel free to use this template.
-          </p>
-          <div class="uQxNj">
-            <NuxtLink class="bQRHNT" to="/login">
-              <span class="fKlELC">
-                Login 
-                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="taKtSf">
-                  <path class="chevron" d="M8 13L13 8L8 3" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-                  <path class="stem" d="M12 8L2 8" stroke-width="1.5"></path>
-                </svg>
-              </span>
-            </NuxtLink>
-            <button class="ieMfVH">
-              <span class="fKlELC">
-                Sign up
-              </span>
-            </button>
-          </div>
-        </div>
-        <div class="absolute inset-0">
-          <div class="background-gradient">
-            <div class="background-gradient-pattern"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+  <div class="relative z-10 max-w-screen-sm">
+    <p class="fVeafc">unauthenticated
+    </p>
+    <h1 class="kKxhrq">
+      Nuxt3 + Supabase
+      <br>
+      Starter Template
+    </h1>
+    <p class="kRTmDC">
+      Authentication template with email and password, using Supabase. If you want to a quick start to your next Nuxt3 app, please feel free to use this template.
+    </p>
+    <div class="uQxNj">
+      <NuxtLink class="bQRHNT" to="/login">
+        <span class="fKlELC">
+          Login 
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="taKtSf">
+            <path class="chevron" d="M8 13L13 8L8 3" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+            <path class="stem" d="M12 8L2 8" stroke-width="1.5"></path>
+          </svg>
+        </span>
+      </NuxtLink>
+      <button class="ieMfVH">
+        <span class="fKlELC">
+          Sign up
+        </span>
+      </button>
+    </div>
+  </div>
 </template>
 
 <style lang="postcss">
+.EjuRYu {
+  @apply font-SuisseIntl;
+  font-feature-settings: "salt" 2;
+}
 .fVeafc {
   @apply text-base leading-5 font-semibold mb-3 text-232730;
   letter-spacing: -.01em;
@@ -100,7 +93,7 @@
   }
 }
 .fKlELC {
-  @apply text-sm gap-1 items-center flex z-10 relative;
+  @apply text-sm gap-1 items-center flex z-10 relative mt-px;
 }
 .taKtSf {
   @apply h-4 stroke-current inline-block -mr-1;
@@ -128,9 +121,10 @@
   }
 }
 .background-gradient {
-  @apply absolute top-1/2 left-3/4 hue-rotate-0;
+  @apply absolute top-1/2 hue-rotate-0;
   width: 150vw;
-  height: 1000px;
+  left: 80%;
+  height: 1024px;
   transform: translate3d(-50%, -50%, 0px);
   -webkit-mask-image: radial-gradient(farthest-side at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
   mask-image: radial-gradient(farthest-side at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));

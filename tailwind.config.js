@@ -15,6 +15,9 @@ export default {
       },
       maxWidth: {
         '75': '18.75rem',
+      },
+      fontFamily: {
+        SuisseIntl: ['SuisseIntl', 'sans-serif'],
       }
     }
   }
