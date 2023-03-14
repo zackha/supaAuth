@@ -1,7 +1,6 @@
 <template>
   <div class="relative z-10 max-w-screen-sm">
-    <p class="fVeafc">unauthenticated
-    </p>
+    <p class="fVeafc">unauthenticated</p>
     <h1 class="kKxhrq">
       Nuxt3 + Supabase
       <br>
