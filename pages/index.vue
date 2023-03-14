@@ -31,6 +31,11 @@
             </button>
           </div>
         </div>
+        <div class="absolute inset-0">
+          <div class="background-gradient">
+            <div class="background-gradient-pattern"></div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -122,5 +127,26 @@
     background-color: rgba(255,255,255,1);
     box-shadow: 0 1px 1px rgba(0,0,0,0.15),0 0 0 1px rgba(87,90,100,0.2);
   }
+}
+.background-gradient {
+  @apply absolute top-1/2 left-3/4 hue-rotate-0;
+  width: 150vw;
+  height: 1000px;
+  transform: translate3d(-50%, -50%, 0px);
+  -webkit-mask-image: radial-gradient(farthest-side at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(90deg,rgba(126,167,233,1),rgba(148,239,183,1));
+  animation-name: background-gradient-animation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  @keyframes background-gradient-animation {
+	  0% {filter: hue-rotate(15deg)}
+	  50% {filter: hue-rotate(-80deg)}
+	  100% {filter: hue-rotate(15deg)}
+  }
+}
+.background-gradient-pattern {
+  @apply absolute inset-0 mix-blend-overlay;
+  background-image: url('~/assets/img/guilloche.svg');
+  background-size: 20px;
 }
 </style>

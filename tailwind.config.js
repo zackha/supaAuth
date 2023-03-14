@@ -1,5 +1,3 @@
-import defaultTheme from 'tailwindcss/defaultTheme'
-
 export default {
   theme: {
     extend: {
@@ -17,12 +15,6 @@ export default {
       },
       maxWidth: {
         '75': '18.75rem',
-      },
-      fontFamily: {
-        sans: [
-          'Inter',
-          ...defaultTheme.fontFamily.sans,
-        ]
       }
     }
   }
