@@ -134,6 +134,7 @@
   height: 1000px;
   transform: translate3d(-50%, -50%, 0px);
   -webkit-mask-image: radial-gradient(farthest-side at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  mask-image: radial-gradient(farthest-side at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
   background-image: linear-gradient(90deg,rgba(126,167,233,1),rgba(148,239,183,1));
   animation-name: background-gradient-animation;
   animation-duration: 8s;
