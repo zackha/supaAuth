@@ -1,6 +1,7 @@
 <template>
   <div class="relative z-10 max-w-screen-sm">
-    <p class="fVeafc">unauthenticated</p>
+    <p v-if="user" class="fVeafc in">Hi {{ user.user_metadata.first_name }}</p>
+    <p v-else class="fVeafc">unauthenticated</p>
     <h1 class="kKxhrq">
       Nuxt3 + Supabase
       <br>
@@ -9,7 +10,14 @@
     <p class="kRTmDC">
       Authentication template with email and password, using Supabase. If you want to a quick start to your next Nuxt3 app, please feel free to use this template.
     </p>
-    <div class="uQxNj">
+    <div class="uQxNj" v-if="user">
+      <button @click="logout" class="ieMfVH">
+        <span class="fKlELC">
+          Log out
+        </span>
+      </button>
+    </div>
+    <div class="uQxNj" v-else>
       <NuxtLink class="bQRHNT" to="/login">
         <span class="fKlELC">
           Login 
@@ -19,14 +27,25 @@
           </svg>
         </span>
       </NuxtLink>
-      <button class="ieMfVH">
-        <span class="fKlELC">
-          Sign up
-        </span>
-      </button>
+      <NuxtLink to="/register">
+        <button class="ieMfVH">
+          <span class="fKlELC">
+            Sign up
+          </span>
+        </button>
+      </NuxtLink>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+const client = useSupabaseAuthClient()
+const user = useSupabaseUser()
+
+const logout = async () => {
+  await client.auth.signOut()
+}
+</script>
 
 <style lang="postcss">
 .EjuRYu {
@@ -41,6 +60,9 @@
     border-radius: 1px;
     background: linear-gradient(165deg,#cd4545 0%,#e97e7e 92%);
     content: '';
+  }
+  &.in::before {
+    background: linear-gradient(165deg,#50cd45 0%,#82e97e 92%);
   }
 }
 .kKxhrq {
@@ -92,10 +114,10 @@
   }
 }
 .fKlELC {
-  @apply text-sm gap-1 items-center flex z-10 relative mt-px;
+  @apply text-sm gap-1 items-center flex z-10 relative mt-0.5;
 }
 .taKtSf {
-  @apply h-4 stroke-current inline-block -mr-1;
+  @apply h-4 stroke-current inline-block -mr-1 mb-0.5;
   .chevron {
     transform: translateX(-3px);
     transition: transform 0.15s ease 0s;
