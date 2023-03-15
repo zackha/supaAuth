@@ -72,5 +72,6 @@ const signUp = async () => {
   if (error) {
     return alert('Something went wrong !')
   }
+  navigateTo('/')
 }
 </script>
