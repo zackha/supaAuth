@@ -45,6 +45,16 @@ const user = useSupabaseUser()
 const logout = async () => {
   await client.auth.signOut()
 }
+
+useHead({
+  title: 'supaAuth',
+  meta: [
+    { name: 'description', content: 'Authentication template with email and password, using Supabase. If you want to a quick start to your next Nuxt3 app, please feel free to use this template.' }
+  ],
+  bodyAttrs: {
+    class: 'EjuRYu'
+  }
+})
 </script>
 
 <style lang="postcss">
@@ -161,7 +171,7 @@ const logout = async () => {
 }
 .background-gradient-pattern {
   @apply absolute inset-0 mix-blend-overlay;
-  background-image: url('~/assets/img/guilloche.svg');
+  background-image: url('/img/guilloche.svg');
   background-size: 20px;
 }
 </style>
