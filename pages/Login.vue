@@ -33,7 +33,10 @@
 <script setup lang="ts">
 definePageMeta({
   layout: "auth"
-});
+})
+useHead({
+  title: 'Login | supaAuth'
+})
 const email = ref('')
 const password = ref('')
 const client = useSupabaseAuthClient()

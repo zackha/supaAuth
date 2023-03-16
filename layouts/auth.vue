@@ -20,3 +20,11 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  bodyAttrs: {
+    class: 'VJxjMf'
+  }
+})
+</script>

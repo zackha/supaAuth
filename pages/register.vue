@@ -49,7 +49,10 @@
 <script setup lang="ts">
 definePageMeta({
   layout: "auth"
-});
+})
+useHead({
+  title: 'Register | supaAuth'
+})
 const email = ref('')
 const password = ref('')
 const name = ref('')
