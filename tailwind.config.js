@@ -18,6 +18,7 @@ export default {
       },
       fontFamily: {
         SuisseIntl: ['SuisseIntl', 'sans-serif'],
+        Inter: ['Inter', 'sans-serif'],
       }
     }
   }
