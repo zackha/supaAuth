@@ -6,7 +6,7 @@
         <div class="fNAZQD">
           <div class="dgrFox">
             <div class="DaoRb">
-              <NuxtPage />
+              <slot />
             </div>
           </div>
         </div>
