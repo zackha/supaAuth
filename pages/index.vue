@@ -50,9 +50,6 @@ useHead({
   title: 'supaAuth',
   meta: [
     { name: 'description', content: 'Authentication template with email and password, using Supabase. If you want to a quick start to your next Nuxt3 app, please feel free to use this template.' }
-  ],
-  bodyAttrs: {
-    class: 'EjuRYu'
-  }
+  ]
 })
 </script>

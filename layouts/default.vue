@@ -12,3 +12,11 @@
     </section>
   </main>
 </template>
+
+<script setup lang="ts">
+useHead({
+  bodyAttrs: {
+    class: 'EjuRYu'
+  }
+})
+</script>
