@@ -15,7 +15,7 @@
         </label>
       </div>
       <div class="jGQTZC">
-        <button class="gZMQdu" type="submit">
+        <button class="gZMQdu" type="submit" :disabled="loading">
           <div class="bjhGPG">Sign in</div>
         </button>
         <NuxtLink to="/forgot-password" class="fTZPOV">Forgot your password?</NuxtLink>
@@ -39,18 +39,24 @@ definePageMeta({
 useHead({
   title: 'Login | supaAuth'
 })
+const loading = ref(false)
 const email = ref('')
 const password = ref('')
 const client = useSupabaseAuthClient()
 
 const login = async () => {
+  loading.value = true
   const { error }  = await client.auth.signInWithPassword({
     email: email.value,
     password: password.value
   })
+  loading.value = false
   if (error) {
     return alert('Something went wrong !')
   }
-  navigateTo('/')
+  loading.value = true
+  if (!error) {
+    navigateTo('/')
+  }
 }
 </script>
