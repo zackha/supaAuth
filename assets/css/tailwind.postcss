@@ -89,7 +89,12 @@ body {
   }
 }
 .bjhGPG {
-  @apply relative z-10 flex justify-center items-center gap-2 min-h-[1.25rem]
+  @apply relative z-10 flex justify-center items-center gap-2 min-h-[1.25rem];
+  transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+  &.loading {
+    opacity: 0;
+    transform: translateY(12px) scale(0.75);
+  }
 }
 .fTZPOV {
   @apply no-underline transition-colors duration-200 text-xs font-medium m-0 leading-normal text-[#b3b5b9] hover:text-[#91949b]
