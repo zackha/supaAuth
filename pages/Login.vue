@@ -89,7 +89,7 @@ const client = useSupabaseAuthClient()
 
 const login = async () => {
   loading.value = true
-  const { data, error }  = await client.auth.signInWithPassword({
+  const { error }  = await client.auth.signInWithPassword({
     email: email.value,
     password: password.value
   })
@@ -97,9 +97,7 @@ const login = async () => {
     loading.value = false
     return alert('Something went wrong !')
   }
-  if (data) {
-    loading.value = true
-    navigateTo('/')
-  }
+  loading.value = true
+  navigateTo('/')
 }
 </script>
