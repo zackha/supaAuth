@@ -1,3 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 export default {
   theme: {
     extend: {
@@ -17,8 +19,7 @@ export default {
         '75': '18.75rem',
       },
       fontFamily: {
-        SuisseIntl: ['SuisseIntl', 'sans-serif'],
-        Inter: ['Inter', 'sans-serif'],
+        sans: ['SuisseIntl', ...defaultTheme.fontFamily.sans]
       }
     }
   }
