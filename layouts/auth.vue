@@ -5,9 +5,7 @@
         <AppBackToLogin />
         <div class="fNAZQD">
           <div class="dgrFox">
-            <div class="DaoRb">
-              <slot />
-            </div>
+            <slot />
           </div>
         </div>
         <p class="cyDNyc">

@@ -1,32 +1,34 @@
 <template>
-  <h1 class="eSHwvX">Sign in</h1>
-  <form @submit.prevent="login">
+  <div class="DaoRb">
+    <h1 class="eSHwvX">Sign in</h1>
+    <form @submit.prevent="login">
+      <div class="jGQTZC">
+        <label class="iJLvzO">
+          <div class="fdCSlG">
+            <input class="cmCuLh" type="text" placeholder="Email address" v-model="email" />
+          </div>
+        </label>
+        <label class="iJLvzO">
+          <div class="fdCSlG">
+            <input class="cmCuLh" type="password" placeholder="Password" v-model="password" />
+          </div>
+        </label>
+      </div>
+      <div class="jGQTZC">
+        <button class="gZMQdu" type="submit">
+          <div class="bjhGPG">Sign in</div>
+        </button>
+        <NuxtLink to="/forgot-password" class="fTZPOV">Forgot your password?</NuxtLink>
+      </div>
+    </form>
     <div class="jGQTZC">
-      <label class="iJLvzO">
-        <div class="fdCSlG">
-          <input class="cmCuLh" type="text" placeholder="Email address" v-model="email" />
-        </div>
-      </label>
-      <label class="iJLvzO">
-        <div class="fdCSlG">
-          <input class="cmCuLh" type="password" placeholder="Password" v-model="password" />
-        </div>
-      </label>
+      <p class="dEDhcH">Don’t have a SupaAuth account?</p>
+      <NuxtLink to="/register">
+        <button class="lcqpaS">
+          <div class="bjhGPG">Create new account</div>
+        </button>
+      </NuxtLink>
     </div>
-    <div class="jGQTZC">
-      <button class="gZMQdu" type="submit">
-        <div class="bjhGPG">Sign in</div>
-      </button>
-      <NuxtLink to="/forgot-password" class="fTZPOV">Forgot your password?</NuxtLink>
-    </div>
-  </form>
-  <div class="jGQTZC">
-    <p class="dEDhcH">Don’t have a SupaAuth account?</p>
-    <NuxtLink to="/register">
-      <button class="lcqpaS">
-        <div class="bjhGPG">Create new account</div>
-      </button>
-    </NuxtLink>
   </div>
 </template>
 

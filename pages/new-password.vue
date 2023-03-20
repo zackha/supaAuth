@@ -1,24 +1,26 @@
 <template>
-  <h1 class="eSHwvX">New password</h1>
-  <form @submit.prevent="updatepassword">
-    <div class="jGQTZC">
-      <label class="iJLvzO">
-        <div class="fdCSlG">
-          <input class="cmCuLh" type="password" placeholder="Password" v-model="password" />
-        </div>
-      </label>
-      <label class="iJLvzO">
-        <div class="fdCSlG">
-          <input class="cmCuLh" type="password" placeholder="Repeat" v-model="passwordConfirm" />
-        </div>
-      </label>
-    </div>
-    <div class="jGQTZC">
-      <button class="gZMQdu" type="submit">
-        <div class="bjhGPG">Save</div>
-      </button>
-    </div>
-  </form>
+  <div class="DaoRb">
+    <h1 class="eSHwvX">New password</h1>
+    <form @submit.prevent="updatepassword">
+      <div class="jGQTZC">
+        <label class="iJLvzO">
+          <div class="fdCSlG">
+            <input class="cmCuLh" type="password" placeholder="Password" v-model="password" />
+          </div>
+        </label>
+        <label class="iJLvzO">
+          <div class="fdCSlG">
+            <input class="cmCuLh" type="password" placeholder="Repeat" v-model="passwordConfirm" />
+          </div>
+        </label>
+      </div>
+      <div class="jGQTZC">
+        <button class="gZMQdu" type="submit">
+          <div class="bjhGPG">Save</div>
+        </button>
+      </div>
+    </form>
+  </div>
 </template>
 
 <script setup lang="ts">
