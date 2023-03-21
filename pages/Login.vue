@@ -104,6 +104,5 @@ const login = async () => {
     loading.value = false
     return alert('Something went wrong !')
   }
-  loading.value = true
 }
 </script>
