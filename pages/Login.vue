@@ -82,10 +82,17 @@ definePageMeta({
 useHead({
   title: 'Login | supaAuth'
 })
+const user = useSupabaseUser();
 const loading = ref(false)
 const email = ref('')
 const password = ref('')
 const client = useSupabaseAuthClient()
+
+watchEffect(async () => {
+  if (user.value) {
+    await navigateTo("/");
+  }
+});
 
 const login = async () => {
   loading.value = true
@@ -98,6 +105,5 @@ const login = async () => {
     return alert('Something went wrong !')
   }
   loading.value = true
-  navigateTo('/')
 }
 </script>
