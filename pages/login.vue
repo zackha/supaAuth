@@ -38,43 +38,6 @@
   </div>
 </template>
 
-<style lang="postcss">
-.gZMQdu svg {
-  --icon-color: currentColor;
-  --icon-size: 20px;
-  flex: 0 0 20px;
-}
-.jjoFVh {
-  @apply absolute left-1/2 top-1/2 opacity-0 block;
-  margin: -10px 0px 0px -10px;
-  transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
-  transform: translateY(-12px) scale(0.75);
-  width: var(--icon-size);
-  height: var(--icon-size);
-  opacity: 0;
-  &.loading {
-    transform: none;
-    opacity: 1;
-  }
-}
-.faEWLr {
-  animation: 1s linear 0s infinite normal none running rotate;
-  transform-origin: 50% 50%;
-  @keyframes rotate {
-	  0% {transform: rotate(0deg)}
-	  100% {transform: rotate(360deg)}
-  }
-}
-.VFMrX {
-  stroke-dasharray: 38px;
-  stroke-dashoffset: 114px;
-  animation: 2s linear 0s infinite normal none running offset;
-  @keyframes offset {
-    50% {stroke-dashoffset: 96px}
-  }
-}
-</style>
-
 <script setup lang="ts">
 definePageMeta({
   layout: "auth"

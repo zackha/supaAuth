@@ -11,10 +11,16 @@
       Authentication template with email and password, using Supabase. If you want to a quick start to your next Nuxt3 app, please feel free to use this template.
     </p>
     <div class="uQxNj" v-if="user">
-      <button @click="logout" class="ieMfVH">
-        <span class="fKlELC">
+      <button @click="logout" class="ieMfVH" :disabled="loading">
+        <span class="fKlELC" :class="{loading: loading}">
           Log out
         </span>
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="jjoFVh" :class="{loading: loading}">
+          <g fill="none" stroke-width="1.5" stroke-linecap="round" class="faEWLr" style="stroke: var(--icon-color);">
+            <circle stroke-opacity=".2" cx="8" cy="8" r="6"></circle>
+            <circle cx="8" cy="8" r="6" class="VFMrX"></circle>
+          </g>
+        </svg>
       </button>
     </div>
     <div class="uQxNj" v-else>
@@ -41,8 +47,10 @@
 <script setup lang="ts">
 const client = useSupabaseAuthClient()
 const user = useSupabaseUser()
+const loading = ref(false)
 
 const logout = async () => {
+  loading.value = true
   await client.auth.signOut()
 }
 

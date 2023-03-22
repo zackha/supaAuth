@@ -254,6 +254,11 @@ body {
 }
 .fKlELC {
   @apply text-sm gap-1 items-center flex z-10 relative mt-0.5;
+  transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+  &.loading {
+    opacity: 0;
+    transform: translateY(12px) scale(0.75);
+  }
 }
 .taKtSf {
   @apply h-4 stroke-current inline-block -mr-1 mb-0.5;
@@ -302,4 +307,41 @@ body {
   @apply absolute inset-0 mix-blend-overlay;
   background-image: url('/img/guilloche.svg');
   background-size: 20px;
+}
+
+
+.gZMQdu svg,
+.ieMfVH svg {
+  --icon-color: currentColor;
+  --icon-size: 20px;
+  flex: 0 0 20px;
+}
+.jjoFVh {
+  @apply absolute left-1/2 top-1/2 opacity-0 block;
+  margin: -10px 0px 0px -10px;
+  transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+  transform: translateY(-12px) scale(0.75);
+  width: var(--icon-size);
+  height: var(--icon-size);
+  opacity: 0;
+  &.loading {
+    transform: none;
+    opacity: 1;
+  }
+}
+.faEWLr {
+  animation: 1s linear 0s infinite normal none running rotate;
+  transform-origin: 50% 50%;
+  @keyframes rotate {
+	  0% {transform: rotate(0deg)}
+	  100% {transform: rotate(360deg)}
+  }
+}
+.VFMrX {
+  stroke-dasharray: 38px;
+  stroke-dashoffset: 114px;
+  animation: 2s linear 0s infinite normal none running offset;
+  @keyframes offset {
+    50% {stroke-dashoffset: 96px}
+  }
 }
