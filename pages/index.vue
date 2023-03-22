@@ -51,7 +51,11 @@ const loading = ref(false)
 
 const logout = async () => {
   loading.value = true
-  await client.auth.signOut()
+  const { error } = await client.auth.signOut()
+  if (error) {
+    loading.value = false
+    return alert('Something went wrong !')
+  }
 }
 
 useHead({
