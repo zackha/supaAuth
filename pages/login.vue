@@ -53,7 +53,7 @@ const client = useSupabaseAuthClient()
 
 watchEffect(async () => {
   if (user.value) {
-    await navigateTo("/")
+    await navigateTo('/')
   }
 });
 

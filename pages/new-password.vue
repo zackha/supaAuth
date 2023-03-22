@@ -50,10 +50,11 @@ const updatepassword = async () => {
   const { error }  = await client.auth.updateUser({
     password: password.value
   })
+  await client.auth.signOut()
   if (error) {
     loading.value = false
     return alert('Something went wrong !')
   }
-  navigateTo('login')
+  await navigateTo('/login')
 }
 </script>
