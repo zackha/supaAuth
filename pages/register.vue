@@ -30,8 +30,14 @@
         </label>
       </div>
       <div class="jGQTZC">
-        <button class="gZMQdu" type="submit">
-          <div class="bjhGPG">Sign up</div>
+        <button class="gZMQdu" type="submit" :disabled="loading">
+          <div class="bjhGPG" :class="{loading: loading}">Sign up</div>
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="jjoFVh" :class="{loading: loading}">
+            <g fill="none" stroke-width="1.5" stroke-linecap="round" class="faEWLr" style="stroke: var(--icon-color);">
+              <circle stroke-opacity=".2" cx="8" cy="8" r="6"></circle>
+              <circle cx="8" cy="8" r="6" class="VFMrX"></circle>
+            </g>
+          </svg>
         </button>
         <div class="xxEKN">
           By signing up you agree to our
@@ -61,8 +67,17 @@ const name = ref('')
 const lastname = ref('')
 const company = ref('')
 const client = useSupabaseAuthClient()
+const user = useSupabaseUser()
+const loading = ref(false)
+
+watchEffect(async () => {
+  if (user.value) {
+    await navigateTo("/")
+  }
+});
 
 const signUp = async () => {
+  loading.value = true
   const { error }  = await client.auth.signUp({
     email: email.value,
     password: password.value,
@@ -75,8 +90,8 @@ const signUp = async () => {
     }
   })
   if (error) {
+    loading.value = false
     return alert('Something went wrong !')
   }
-  navigateTo('/')
 }
 </script>
