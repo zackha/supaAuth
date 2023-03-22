@@ -9,8 +9,14 @@
           </div>
         </label>
       </div>
-      <button class="gZMQdu" type="submit">
-        <div class="bjhGPG">Request</div>
+      <button class="gZMQdu" type="submit" :disabled="loading">
+        <div class="bjhGPG" :class="{loading: loading}">Request</div>
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="jjoFVh" :class="{loading: loading}">
+          <g fill="none" stroke-width="1.5" stroke-linecap="round" class="faEWLr" style="stroke: var(--icon-color);">
+            <circle stroke-opacity=".2" cx="8" cy="8" r="6"></circle>
+            <circle cx="8" cy="8" r="6" class="VFMrX"></circle>
+          </g>
+        </svg>
       </button>
     </form>
   </div>
@@ -25,12 +31,15 @@ useHead({
 })
 const email = ref('')
 const client = useSupabaseAuthClient()
+const loading = ref(false)
 
 const resetPassword = async () => {
+  loading.value = true
   const { error }  = await client.auth.resetPasswordForEmail(email.value, {
     redirectTo: `${window.location.origin}/new-password`
   })
   if (error) {
+    loading.value = false
     return alert('Something went wrong !')
   }
 }
