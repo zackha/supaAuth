@@ -2,6 +2,8 @@
   <div class="DaoRb">
     <h1 class="eSHwvX">New password</h1>
     <form @submit.prevent="updatepassword">
+      <ErrorAlert :error-msg="authError" @clearError="clearError" />
+      <SuccessAlert :success-msg="authSuccess" @clearSuccess="clearSuccess" />
       <div class="jGQTZC">
         <label class="iJLvzO">
           <div class="fdCSlG">
@@ -40,12 +42,11 @@ const password = ref('')
 const passwordConfirm = ref('')
 const client = useSupabaseAuthClient()
 const loading = ref(false)
+const authSuccess = ref('')
+const authError = ref('')
 
 const updatepassword = async () => {
-  if (password.value !== passwordConfirm.value) {
-    alert('password and repeated password mismatch')
-    return
-  }
+  if (password.value !== passwordConfirm.value) return authError.value = 'Password mismatch!';
   loading.value = true
   const { error }  = await client.auth.updateUser({
     password: password.value
@@ -53,8 +54,27 @@ const updatepassword = async () => {
   await client.auth.signOut()
   if (error) {
     loading.value = false
-    return alert('Something went wrong !')
+    authError.value = 'Failed to fetch'
+    setTimeout(() => {
+      authError.value = ''
+    }, 5000)
   }
-  await navigateTo('/login')
+  else {
+    loading.value = false
+    authSuccess.value = `Password changed`
+    setTimeout(() => {
+      authSuccess.value = ''
+      navigateTo('/login')
+    }, 5000)
+  }
 }
+
+const clearError = () => {
+  authError.value = '';
+};
+
+const clearSuccess = () => {
+  authSuccess.value = ''
+  navigateTo('/login')
+};
 </script>
