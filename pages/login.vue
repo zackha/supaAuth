@@ -67,7 +67,7 @@ const login = async () => {
   })
   if (error) {
     loading.value = false
-    authError.value = 'Failed to fetch'
+    authError.value = 'Invalid login credentials'
     setTimeout(() => {
       authError.value = ''
     }, 5000)
