@@ -2,6 +2,7 @@
   <div class="DaoRb">
     <h1 class="eSHwvX">Create an account</h1>
     <form @submit.prevent="signUp">
+      <ErrorAlert :error-msg="authError" @clearError="clearError" />
       <div class="jGQTZC">
         <label class="iJLvzO">
           <div class="fdCSlG">
@@ -69,6 +70,7 @@ const company = ref('')
 const client = useSupabaseAuthClient()
 const user = useSupabaseUser()
 const loading = ref(false)
+const authError = ref('')
 
 watchEffect(async () => {
   if (user.value) {
@@ -77,6 +79,8 @@ watchEffect(async () => {
 });
 
 const signUp = async () => {
+  if (!name.value) return authError.value = 'First name required';
+  if (!lastname.value) return authError.value = 'Last name required';
   loading.value = true
   const { error }  = await client.auth.signUp({
     email: email.value,
@@ -91,7 +95,11 @@ const signUp = async () => {
   })
   if (error) {
     loading.value = false
-    return alert('Something went wrong !')
+    authError.value = 'Failed to fetch'
   }
+}
+
+const clearError = () => {
+  authError.value = ''
 }
 </script>
