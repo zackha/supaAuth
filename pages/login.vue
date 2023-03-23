@@ -2,6 +2,7 @@
   <div class="DaoRb">
     <h1 class="eSHwvX">Sign in</h1>
     <form @submit.prevent="login">
+      <ErrorAlert :error-msg="authError" @clearError="clearError" />
       <div class="jGQTZC">
         <label class="iJLvzO">
           <div class="fdCSlG">
@@ -47,6 +48,7 @@ useHead({
 })
 const user = useSupabaseUser()
 const loading = ref(false)
+const authError = ref('')
 const email = ref('')
 const password = ref('')
 const client = useSupabaseAuthClient()
@@ -65,7 +67,14 @@ const login = async () => {
   })
   if (error) {
     loading.value = false
-    return alert('Something went wrong !')
+    authError.value = 'Failed to fetch'
+    setTimeout(() => {
+      authError.value = ''
+    }, 5000)
   }
 }
+
+const clearError = () => {
+  authError.value = '';
+};
 </script>
