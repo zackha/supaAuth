@@ -4,6 +4,7 @@
 
 ### [👉 Live Demo](https://supaauth.netlify.app/)
 
-![preview](https://user-images.githubusercontent.com/79358543/229439834-597b51ba-d9df-4668-9c2f-21f06363b53e.png)
 
-![tutorial](https://user-images.githubusercontent.com/79358543/229438799-36635f7b-19d8-4212-a5f2-9c92f98e76bc.gif)
+![Preview](https://user-images.githubusercontent.com/79358543/229441570-3ba48ca8-8cf3-4fd4-aac7-2cc5eac67a03.png)
+
+![Tutorial](https://user-images.githubusercontent.com/79358543/229441594-e7cbec31-726d-4029-96ba-d7631fd3aef5.gif)
