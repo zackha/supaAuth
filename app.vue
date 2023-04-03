@@ -37,4 +37,18 @@
   animation-name: fadeOut;
   animation-duration: 0.25s;
 }
+/* Scale Y */
+.scale-y-enter-active,
+.scale-y-leave-active {
+  transition: all 300ms linear;
+  will-change: max-height, opacity;
+  max-height: 160px;
+  overflow: hidden;
+  opacity: 1;
+}
+.scale-y-enter-from,
+.scale-y-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
 </style>
