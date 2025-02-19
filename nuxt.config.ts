@@ -2,7 +2,11 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/supabase', '@nuxtjs/tailwindcss'],
 
   tailwindcss: {
-    cssPath: '~/assets/css/tailwind.postcss'
+    cssPath: '~/assets/css/tailwind.postcss',
+  },
+
+  future: {
+    compatibilityVersion: 4,
   },
 
   app: {
@@ -16,9 +20,9 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono&display=swap' },
-      ]
-    }
+      ],
+    },
   },
 
-  compatibilityDate: '2025-02-19'
-})
+  compatibilityDate: '2025-02-19',
+});
