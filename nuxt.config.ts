@@ -1,8 +1,10 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/supabase', '@nuxtjs/tailwindcss'],
+
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.postcss'
   },
+
   app: {
     layoutTransition: { name: 'layout', mode: 'out-in' },
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -16,5 +18,7 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono&display=swap' },
       ]
     }
-  }
+  },
+
+  compatibilityDate: '2025-02-19'
 })
