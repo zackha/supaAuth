@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-const client = useSupabaseAuthClient();
+const client = useSupabaseClient();
 const user = useSupabaseUser();
 const loading = ref(false);
 

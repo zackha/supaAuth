@@ -5,6 +5,13 @@ export default defineNuxtConfig({
     cssPath: '~/assets/css/tailwind.postcss',
   },
 
+  supabase: {
+    redirectOptions: {
+      login: '*',
+      callback: '*',
+    },
+  },
+
   future: {
     compatibilityVersion: 4,
   },

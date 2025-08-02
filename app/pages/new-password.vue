@@ -40,7 +40,7 @@ useHead({
 });
 const password = ref('');
 const passwordConfirm = ref('');
-const client = useSupabaseAuthClient();
+const client = useSupabaseClient();
 const loading = ref(false);
 const authSuccess = ref('');
 const authError = ref('');
@@ -54,7 +54,7 @@ const updatepassword = async () => {
   await client.auth.signOut();
   if (error) {
     loading.value = false;
-    authError.value = 'Failed to fetch';
+    authError.value = error.message;
     setTimeout(() => {
       authError.value = '';
     }, 5000);

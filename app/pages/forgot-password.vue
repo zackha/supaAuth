@@ -32,7 +32,7 @@ useHead({
   title: 'Forgot Password | supaAuth',
 });
 const email = ref('');
-const client = useSupabaseAuthClient();
+const client = useSupabaseClient();
 const loading = ref(false);
 const authSuccess = ref('');
 const authError = ref('');
@@ -44,7 +44,7 @@ const resetPassword = async () => {
   });
   if (error) {
     loading.value = false;
-    authError.value = 'Invalid email credential';
+    authError.value = error.message;
     setTimeout(() => {
       authError.value = '';
     }, 5000);

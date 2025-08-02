@@ -51,7 +51,7 @@ const loading = ref(false);
 const authError = ref('');
 const email = ref('');
 const password = ref('');
-const client = useSupabaseAuthClient();
+const client = useSupabaseClient();
 
 watchEffect(async () => {
   if (user.value) {
@@ -67,7 +67,7 @@ const login = async () => {
   });
   if (error) {
     loading.value = false;
-    authError.value = 'Invalid login credentials';
+    authError.value = error.message;
     setTimeout(() => {
       authError.value = '';
     }, 5000);
