@@ -14,7 +14,10 @@
 
 ### 🚀 Live Demo
 
-[👉 supaauth-nuxt4.vercel.app](https://supaauth-nuxt4.vercel.app/)
+| Demo         | URL                                |
+| ------------ | ---------------------------------- |
+| Vercel Demo  | https://supaauth-nuxt4.vercel.app/ |
+| NuxtHub Demo | https://supaauth.nuxt.dev/         |
 
 ---
 
