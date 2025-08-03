@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/supabase', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/supabase', '@nuxtjs/tailwindcss', '@nuxthub/core'],
 
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.postcss',
